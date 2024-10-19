@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<style>
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.card{
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+   border: 8px solid rgb(255, 255, 255);
+   position: relative;
+ 
+   
+}
+
+h1, h2 {
+            color: rgb(255, 0, 0);
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+            
+            
+        }
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.card:hover .card-body{
+    right: 0%;
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+.card-btn{
+    color: #1f3657;
+    background: #8fabba;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 150px;
+    
+}
+
+.img{
+    width: 100px;
+    height: 50px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;
+  }
+  .introduction-section {
+            border: 5px solid white;
+            margin: 5%;
+            padding: 2%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .para {
+            font-style: italic;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+        .btn-custom {
+            position: relative;
+            background-color: transparent;
+            border: 1px solid #fffbfb;
+            padding: 12px 24px;
+            color: #fff0f0;
+            text-transform: uppercase;
+            transition: color 400ms;
+            margin: 0 auto;
+            display: block;
+        }
+        .btn-custom::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            display: inline-block;
+            background-color: #ff0202;
+            transform: scaleX(0);
+            transform-origin: right;
+            z-index: -1;
+            transition: transform 400ms;
+        }
+        .btn-custom:hover {
+            color: white;
+        }
+        .btn-custom:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+</style>
+</head>
+<body style="background-color: black;">
+    
+
+<br><br>
+<img src="./images/BANNNER.webp" width="100%" >
+<br><br>
+<h1 style="margin-top: 5%;font-style: italic;">WELL COME TO THE BMW GALLARY</h1>
+<div>
+    <h1 style="margin-top: 50px;text-align: center;color: red;margin-bottom: 5%;"><span>Gallarly</span></h1>
+    </div>
+    
+    
+    
+    <div style="margin-left: 10px; " class="conatiner">
+      <div class="row">
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 1.webp" class="card-img" alt="">
+        <div class="card-body">
+           
+         
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 12.jpeg" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+    
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 13.jpeg" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+        
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 14.webp" class="card-img" alt="">
+        <div class="card-body">
+     
+         
+          
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      </div>
+      </div>
+            <br><br><br>
+    
+    
+    <div style="margin-left: 10px; " class="conatiner">
+      <div class="row">
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 15.jpeg" class="card-img" alt="">
+        <div class="card-body">
+           
+         
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 16.jpeg" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+    
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 17.jpeg" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+        
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 19.jpeg" class="card-img" alt="">
+        <div class="card-body">
+     
+         
+          
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      </div>
+      </div>
+            <br><br><br>
+            
+            
+    <div style="margin-left: 10px; " class="conatiner">
+      <div class="row">
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 20.jpeg" class="card-img" alt="">
+        <div class="card-body">
+           
+         
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 3.webp" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+    
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 4.webp" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+        
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 5.jpeg" class="card-img" alt="">
+        <div class="card-body">
+     
+         
+          
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      </div>
+      </div>
+            <br><br><br>
+            
+            
+    <div style="margin-left: 10px; " class="conatiner">
+      <div class="row">
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 7.webp" class="card-img" alt="">
+        <div class="card-body">
+           
+         
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 8.jpeg" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+    
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/GALARY 9.jpeg" class="card-img" alt="">
+        <div class="card-body">
+          
+       
+        
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    <div  class="col-md-3">
+      <div  class="card">
+        <img src="./images/ALARY 11.jpeg" class="card-img" alt="">
+        <div class="card-body">
+     
+         
+          
+            
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      </div>
+      </div>
+            <br><br><br>
+            <div class="introduction-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./images/ABOUT 1.jpeg" alt="Project Image">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p class="para">The high-performance 6-cylinder BMW M TwinPower Turbo gasoline engine delivers a powerful 473 hp and accelerates from 0-60 mph in 4.1 seconds. And thanks to the manual M Transmission and M-specific suspension, you'll always remain in control.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="introduction-section">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p class="para"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./images/ABOUT 2.jpeg" alt="Project Image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="introduction-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./images/ABOUT 3.webp" alt="Project Image">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p class="para">Not surprisingly, the M3 has more carbon fiber and microsuede accents for a racier aesthetic. The driver faces a large curved digital gauge cluster that will switch to M View in the sportier drive modes; they are activated via prominent red buttons on the M3's chunky steering wheel.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <br><br>
+            
+           <img style="margin-left: 15%;" src="./images/off.PNG" alt="" id="PNG" width="70%">
+           
+           <div style="display: flex;  margin-top: 5%;margin-left: 35%;margin-right: 35%;">
+            <button class="btn btn-custom" onclick="on()">LIGHTS ON</button>
+            <button class="btn btn-custom" onclick="off()">LIGHTS OFF</button>
+        </div>
+
+
+           <script>
+
+  function on(){
+
+  let on = document.getElementById("PNG");
+  on.src = "./images/on.PNG";
+  }
+
+  function off(){
+
+let off = document.getElementById("PNG");
+off.src = "./images/off.PNG";
+}
+
+
+           </script>
+           <!-- Footer -->
+<footer class="text-center text-lg-start text-muted mt-5">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-google"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Fascination Sheer Driving Pleasure
+                    </h6>
+                    <img src="./images/logo1.jpg" class="img-fluid" alt="BMW Logo" width="150px" height="150px">
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful Links
+                    </h6>
+                    <p><a href="#!" class="text-reset">Site Map</a></p>
+                    <p><a href="./Contactus.html" class="text-reset">Contact Us</a></p>
+                    <p><a href="./about us.html" class="text-reset">About Us</a></p>
+                    <p><a href="#!" class="text-reset">Gallery</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Karachi, Pakistan</p>
+                    <p><i class="fas fa-envelope me-3"></i> www.BMW.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +03352139011</p>
+                    <p><i class="fas fa-print me-3"></i> +03183891741</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center p-4">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://www.bmw.com/en/index.html">BMW.com</a>
+    </div>
+</footer>
+
+</body>
+</html>

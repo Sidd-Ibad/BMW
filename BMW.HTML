@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Gallery</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 8px solid rgb(255, 255, 255);
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: rgb(255, 0, 0);
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .card-body {
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 61, 71, 0.8);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: right 0.5s;
+        }
+
+        .card:hover .card-body {
+            right: 0;
+        }
+
+        .introduction-section {
+            border: 5px solid white;
+            margin: 2%;
+            padding: 2%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .para {
+            font-style: italic;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .btn-custom {
+            background-color: transparent;
+            border: 1px solid #fffbfb;
+            padding: 12px 24px;
+            color: #fff;
+            text-transform: uppercase;
+            transition: color 400ms;
+        }
+
+        .btn-custom:hover {
+            color: white;
+            background-color: #ff0202;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .card-body {
+                padding: 15px;
+            }
+
+            .para {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+
+    <img src="./images/BANNNER.webp" class="img-fluid" alt="BMW Banner">
+    <h1 class="mt-5">WELCOME TO THE BMW GALLERY</h1>
+
+    <div class="container mt-5">
+        <h1 class="text-center  mb-5">Gallery</h1>
+        <div class="row">
+            <!-- Gallery Cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/1.webp" class="card-img" alt="BMW Gallery 1">
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/10.jpeg" class="card-img" alt="BMW Gallery 1">
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./images/9.jpeg" class="card-img" alt="BMW Gallery 1">
+                       
+                    </div>
+                </div>
+        </div>
+    </div>
+<br><br>
+
+<div class="container mt-5">
+   
+    <div class="row">
+        <!-- Gallery Cards -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./images/8.webp" class="card-img" alt="BMW Gallery 1">
+                
+            </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/13.jpeg" class="card-img" alt="BMW Gallery 1">
+                  
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/14.jpeg" class="card-img" alt="BMW Gallery 1">
+                    
+                </div>
+            </div>
+    </div>
+</div>
+<br><br><br>
+
+<div class="container mt-5">
+ 
+    <div class="row">
+        <!-- Gallery Cards -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./images/15.jpeg" class="card-img" alt="BMW Gallery 1">
+               
+            </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/16.jpeg" class="card-img" alt="BMW Gallery 1">
+                   
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/2.webp" class="card-img" alt="BMW Gallery 1">
+                    
+                </div>
+            </div>
+    </div>
+</div>
+<br><br>
+
+<div class="container mt-5">
+    
+    <div class="row">
+        <!-- Gallery Cards -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./images/free-photo-of-black-bmw-in-garage.jpeg" class="card-img" alt="BMW Gallery 1">
+                
+            </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/4.webp" class="card-img" alt="BMW Gallery 1">
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/5.jpeg" class="card-img" alt="BMW Gallery 1">
+                    
+                </div>
+            </div>
+    </div>
+</div>
+<br><br>
+
+
+
+    <!-- Information Section -->
+    <div class="container">
+        <div class="introduction-section row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./images/ABOUT 1.jpeg" alt="BMW Performance">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <p class="para">The high-performance 6-cylinder BMW M TwinPower Turbo gasoline engine delivers a powerful 473 hp...</p>
+            </div>
+        </div>
+    </div>
+    <br>
+ <!-- Information Section -->
+ <div class="container">
+    <div class="introduction-section row">
+        <div class="col-md-6 d-flex align-items-center">
+            <p class="para">BMW M3 is a 5 seater Sedan with the last recorded price of Rs. 1.30 Crore. It is available in 1 variant, 2979 cc engine option and 1 transmission option : Automatic. Other key specifications of the M3 include a ground clearance of 140 mm.</p>
+        </div>
+        <div class="col-md-6">
+            
+            <img class="img-fluid" src="./images/ABOUT 2.jpeg" alt="BMW Performance">
+        </div>
+       
+    </div>
+</div>
+<br>
+ <!-- Information Section -->
+ <div class="container">
+    <div class="introduction-section row">
+        <div class="col-md-6">
+            <img class="img-fluid" src="./images/ABOUT 3.webp" alt="BMW Performance">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <p class="para">Not surprisingly, the M3 has more carbon fiber and microsuede accents for a racier aesthetic. The driver faces a large curved digital gauge cluster that will switch to M View in the sportier drive modes; they are activated via prominent red buttons on the M3's chunky steering wheel.</p>
+        </div>
+    </div>
+</div>
+<br><br>
+    <div class="container text-center mt-5">
+        <img style="width: 70%;" src="./images/off.PNG" alt="Car Lights" id="PNG">
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <button class="btn btn-custom" onclick="on()">LIGHTS ON</button>
+            <button class="btn btn-custom" onclick="off()">LIGHTS OFF</button>
+        </div>
+    </div>
+
+    <script>
+        function on() {
+            document.getElementById("PNG").src = "./images/on.PNG";
+        }
+        function off() {
+            document.getElementById("PNG").src = "./images/off.PNG";
+        }
+    </script> <br><br><br>
+ <h1>Thank you very, very much for coming this far.</h1>
+    <!-- Footer -->
+    <footer class="text-center text-muted mt-5">
+        <div class="p-4 border-bottom">
+            <span>Get connected with us on social networks:</span>
+            <div>
+                <a href="#" class="me-4 text-reset"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+        <div class="text-center p-4">© 2024 BMW.com</div>
+    </footer>
+
+   
+
+</body>
+</html>

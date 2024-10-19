@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    
+    <style>
+        h1, h2 {
+            color: rgb(255, 0, 0);
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+            text-decoration: underline;
+            margin-top: 3%;
+        }
+        .introduction-section {
+            border: 5px solid white;
+            margin: 5%;
+            padding: 2%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .para {
+            font-style: italic;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+        .btn-custom {
+            position: relative;
+            background-color: transparent;
+            border: 1px solid #fffbfb;
+            padding: 12px 24px;
+            color: #fff0f0;
+            text-transform: uppercase;
+            transition: color 400ms;
+            margin: 0 auto;
+            display: block;
+        }
+        .btn-custom::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            display: inline-block;
+            background-color: #ff0202;
+            transform: scaleX(0);
+            transform-origin: right;
+            z-index: -1;
+            transition: transform 400ms;
+        }
+        .btn-custom:hover {
+            color: white;
+        }
+        .btn-custom:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+
+<h1>THANKS FOR COMING HERE</h1>
+<h2>INTRODUCTION</h2>
+
+<div class="introduction-section">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid" src="./images/1 (2).jpeg" alt="Project Image">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <p class="para">Hello guys, my name is Ibad Siddiqui. I am 22 years old and currently pursuing a Frontend & Backend Web Development course at Aptech Coaching Center. I am presenting a small project to you all, and I hope you will like it. So, enjoy!</p>
+        </div>
+    </div>
+</div>
+
+<h2>Click here to see my little creativity</h2><br>
+<button class="btn btn-custom" onclick="next()">CLICK ME</button>
+
+<script>
+    function next() {
+        window.open("BMW.HTML");
+    }
+</script>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted mt-5">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-google"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Fascination Sheer Driving Pleasure
+                    </h6>
+                    <img src="./images/logo1.jpg" class="img-fluid" alt="BMW Logo" width="150px" height="150px">
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful Links
+                    </h6>
+                    <p><a href="#!" class="text-reset">Site Map</a></p>
+                    <p><a href="./Contactus.html" class="text-reset">Contact Us</a></p>
+                    <p><a href="./about us.html" class="text-reset">About Us</a></p>
+                    <p><a href="#!" class="text-reset">Gallery</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Karachi, Pakistan</p>
+                    <p><i class="fas fa-envelope me-3"></i> www.BMW.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +03352139011</p>
+                    <p><i class="fas fa-print me-3"></i> +03183891741</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center p-4">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://www.bmw.com/en/index.html">BMW.com</a>
+    </div>
+</footer>
+
+</body>
+</html>
